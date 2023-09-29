@@ -1,0 +1,114 @@
+.cs-ingredients .page-width {
+  z-index: 4;
+}
+.cs-ingredients .title-wrapper-with-link {
+  justify-content: center;
+}
+.cs-ingredients .title-wrapper-with-link h2 {
+  text-transform: uppercase;
+}
+.cs-ingredients .btn-show_modal {
+  background: none;
+  border: 0;
+  color: #000;
+  padding: 0;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 12px;
+  margin: 2rem auto 0;
+  cursor: pointer;
+}
+.cs-ingredients .btn-show_modal:before, .cs-ingredients .btn-show_modal:after {
+  display: none;
+}
+.cs-ingredients_overlay {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  top: 0;
+}
+.cs-ingredients_modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  background-color: white;
+  z-index: 4;
+  padding: 6rem;
+  border-radius: 20px;
+}
+.cs-ingredients_modal .btn-close_modal {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  font-size: 30px;
+}
+.cs-ingredients_modal--row {
+  display: flex;
+}
+.cs-ingredients_modal--left {
+  width: 30%;
+}
+.cs-ingredients_modal--right {
+  width: 70%;
+  margin-left: 4rem;
+}
+.cs-ingredients_modal--right h3 {
+  font-weight: 600;
+  font-size: 22px;
+}
+.cs-ingredients_modal--right .metafield-rich_text_field ul {
+  padding-left: 20px;
+  padding-top: 11px;
+}
+.cs-ingredients_modal-main {
+  margin-top: 2rem;
+}
+.cs-ingredients .multicolumn-list__item .multicolumn-card__image-wrapper {
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 0;
+}
+.cs-ingredients .multicolumn-list__item .multicolumn-card__image-wrapper .media img {
+  width: 100%;
+}
+.cs-ingredients .multicolumn-list .cs-ingredients_overlay {
+  background-color: rgba(0, 0, 0, 0.9019607843);
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+@media (max-width: 767px) {
+  .cs-ingredients_modal {
+    padding: 2rem;
+    width: 85%;
+  }
+  .cs-ingredients .multicolumn-list .cs-ingredients_overlay {
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+  .cs-ingredients_modal--row {
+    display: block;
+  }
+  .cs-ingredients_modal--right {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  .cs-ingredients_modal--left, .cs-ingredients_modal--right {
+    width: 100%;
+  }
+  .cs-ingredients_modal .btn-close_modal {
+    right: -3px;
+    top: -5px;
+  }
+}
